@@ -2,14 +2,21 @@
 
 /*De kleuren (lichtgrijs #F7F7F7 en donkergrijs #d3d3d3)*/
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .recipe-card {
     /* "auto" aan de zijkanten zorgt ervoor dat het element in het midden komt te staan*/
     margin: 80px auto;
     /* Dit element heeft een vaste breedte van 350 pixels */
     width: 350px;
-    box-sizing: border-box;
     border-radius: 5px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 4px 12px;
     border: 1px hsl(0, 0%, 83%) solid;
     max-width: 100%;
     overflow: hidden;
@@ -21,23 +28,22 @@
 }
 
 .favorite-image {
-    width: 16px;
-    height: 16px;
+    width: 20px;
     position: absolute;
     top: 15px;
     right: 15px;
 }
 
 .recipe-title {
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 16px;
     position: relative;
     left: 20px;
+    padding-bottom: 10px;
 }
 
+/*div*/
 .recipe-info {
-    font-family: 'Poppins', sans-serif;
     background-color: hsl(0, 0%, 97%);
     margin-top: -5px;
     padding: 8px;
@@ -52,7 +58,6 @@
 }
 
 .time-icon img {
-    width: 16px;
     height: 16px;
     margin-right: 8px;
     vertical-align: auto;
@@ -65,7 +70,6 @@
 }
 
 .fire-icon img {
-    width: 16px;
     height: 16px;
     margin-right: 8px;
     vertical-align: auto;
@@ -78,8 +82,29 @@
 }
 
 .star-icon img {
-    width: 16px;
     height: 16px;
     margin-right: 8px;
     vertical-align: auto;
 }
+
+
+
+/*!*div*!*/
+/*.recipe-details {*/
+/*    background-color: #F7F7F7;*/
+/*    padding-block: 5px;*/
+/*    margin-top: -7px;*/
+/*}*/
+
+/*!*span*!*/
+/*.recipe-detail-item {*/
+/*    margin-inline: 8px;*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*!*img*!*/
+/*.detail-icon {*/
+/*    !*hier gebruiken we height in plaats van width, omdat de verschillende icoontjes andere vormen hebben en zo meer gelijk blijven*!*/
+/*    height: 12px;*/
+/*    margin-inline: 5px;*/
+/*}*/
